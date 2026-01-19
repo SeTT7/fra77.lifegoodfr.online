@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="acceder al contenido">
+    <title>Contenido Exclusivo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        .age-verification-container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .verification-title {
+            color: #cc0000;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .verification-instruction {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .primary-button, 
+        #verification-cta-button {
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 12px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+        }
+
+        .primary-button:hover, 
+        #verification-cta-button:hover {
+            background-color: #b30000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .cta-button-container {
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @keyframes fadeIn {
+            from { 
+                opacity: 0; 
+                transform: translateY(10px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="age-verification-container">
+        <h1 class="verification-title">Acceso a Contenido Exclusivo:</h1>
+        <p class="verification-instruction">
+            Haz clic en el botón de abajo para ver el video explicativo
+        </p>
+
+        <div class="cta-button-container"> 
+            <a href="https://fra48.lifegoodfr.online/pv" id="verification-cta-button" class="primary-button">
+                VER EL VIDEO
+            </a>
+        </div>
+    </main>
+
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function collectUrlParameters(url) {
+                const urlObj = new URL(url);
+                let paramString = "";
+
+                urlObj.searchParams.forEach((value, key) => {
+                    paramString += `${paramString ? '&' : ''}${key}=${value}`;
+                });
+
+                return paramString;
+            }
+
+            const urlParams = collectUrlParameters(window.location.href);
+
+            if (urlParams) {
+                document.querySelectorAll("a").for
